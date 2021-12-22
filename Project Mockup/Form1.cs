@@ -26,6 +26,7 @@ namespace Project_Mockup
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
+            drawingArea.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, 733, 522, 15, 15));
             pnlNav.Height = btnArray.Height;
             pnlNav.Top = btnArray.Top;
             pnlNav.Left = btnArray.Left;
@@ -131,6 +132,11 @@ namespace Project_Mockup
         private void button1_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
