@@ -138,5 +138,15 @@ namespace Project_Mockup
         {
 
         }
+
+        private void button1_Leave(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.FromArgb(46, 51, 73);
+        }
+
+        private void button1_Enter(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.FromArgb(200, 0, 0);
+        }
     }
 }

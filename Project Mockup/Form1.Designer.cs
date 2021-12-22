@@ -229,6 +229,8 @@ namespace Project_Mockup
             this.button1.Text = "X\r\n";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.Enter += new System.EventHandler(this.button1_Enter);
+            this.button1.Leave += new System.EventHandler(this.button1_Leave);
             // 
             // drawingArea
             // 
