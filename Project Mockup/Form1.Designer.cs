@@ -81,7 +81,7 @@ namespace Project_Mockup
             this.btnShiftToSort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShiftToSort.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShiftToSort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnShiftToSort.Location = new System.Drawing.Point(3, 537);
+            this.btnShiftToSort.Location = new System.Drawing.Point(0, 540);
             this.btnShiftToSort.Name = "btnShiftToSort";
             this.btnShiftToSort.Size = new System.Drawing.Size(200, 37);
             this.btnShiftToSort.TabIndex = 8;
@@ -108,6 +108,7 @@ namespace Project_Mockup
             // 
             // btnTrees
             // 
+            this.btnTrees.AllowDrop = true;
             this.btnTrees.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnTrees.FlatAppearance.BorderSize = 0;
             this.btnTrees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
