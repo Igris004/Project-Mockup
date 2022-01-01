@@ -43,6 +43,7 @@ namespace Project_Mockup
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.pnlFormLoader = new System.Windows.Forms.Panel();
             this.pnl.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -232,12 +233,20 @@ namespace Project_Mockup
             this.button1.Enter += new System.EventHandler(this.button1_Enter);
             this.button1.Leave += new System.EventHandler(this.button1_Leave);
             // 
+            // pnlFormLoader
+            // 
+            this.pnlFormLoader.Location = new System.Drawing.Point(204, 38);
+            this.pnlFormLoader.Name = "pnlFormLoader";
+            this.pnlFormLoader.Size = new System.Drawing.Size(748, 539);
+            this.pnlFormLoader.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(951, 577);
+            this.Controls.Add(this.pnlFormLoader);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -268,6 +277,7 @@ namespace Project_Mockup
         private System.Windows.Forms.Button btnHeaps;
         private System.Windows.Forms.Panel pnlNav;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel pnlFormLoader;
     }
 }
 

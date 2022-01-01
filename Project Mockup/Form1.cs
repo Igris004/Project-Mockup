@@ -8,10 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Project_Mockup.Scripts;
+
 namespace Project_Mockup
 {
     public partial class Form1 : Form
     {
+        private Form currentChildForm;
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
             (
@@ -50,6 +53,7 @@ namespace Project_Mockup
             pnlNav.Height = btnStack.Height;
             pnlNav.Top = btnStack.Top;
             pnlNav.Left = btnStack.Left;
+            openChildForm(new FormStack());
             btnStack.BackColor = Color.FromArgb(46, 51, 73);
         }
 
@@ -146,6 +150,21 @@ namespace Project_Mockup
         private void button1_Enter(object sender, EventArgs e)
         {
             button1.BackColor = Color.FromArgb(200, 0, 0);
+        }
+        private void openChildForm(Form childForm)
+        {
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
+            currentChildForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pnlFormLoader.Controls.Add(childForm);
+            pnlFormLoader.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
     }
 }
