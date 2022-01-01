@@ -43,7 +43,6 @@ namespace Project_Mockup
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.drawingArea = new System.Windows.Forms.Panel();
             this.pnl.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -233,22 +232,12 @@ namespace Project_Mockup
             this.button1.Enter += new System.EventHandler(this.button1_Enter);
             this.button1.Leave += new System.EventHandler(this.button1_Leave);
             // 
-            // drawingArea
-            // 
-            this.drawingArea.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(150)))), ((int)(((byte)(170)))));
-            this.drawingArea.Location = new System.Drawing.Point(206, 43);
-            this.drawingArea.Name = "drawingArea";
-            this.drawingArea.Size = new System.Drawing.Size(733, 522);
-            this.drawingArea.TabIndex = 11;
-            this.drawingArea.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(951, 577);
-            this.Controls.Add(this.drawingArea);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -279,7 +268,6 @@ namespace Project_Mockup
         private System.Windows.Forms.Button btnHeaps;
         private System.Windows.Forms.Panel pnlNav;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel drawingArea;
     }
 }
 

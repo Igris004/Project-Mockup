@@ -26,7 +26,6 @@ namespace Project_Mockup
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
-            drawingArea.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, 733, 522, 15, 15));
             pnlNav.Height = btnArray.Height;
             pnlNav.Top = btnArray.Top;
             pnlNav.Left = btnArray.Left;
