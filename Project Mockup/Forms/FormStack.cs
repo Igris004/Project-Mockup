@@ -46,7 +46,7 @@ namespace Project_Mockup.Scripts
                         stack.Push(input);
                         MessageBox.Show("Inserted successfully! Now enter the second element.");
                         last_node = input;
-
+                        txtboxInsert.Text = "";
                     }
                     else
                     {
@@ -78,6 +78,7 @@ namespace Project_Mockup.Scripts
                         form.Controls.Add(viewer);
                         form.ResumeLayout();
                         form.Show();
+                        txtboxInsert.Text = "";
                     }
                     else
                     {

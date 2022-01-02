@@ -118,7 +118,7 @@ namespace Project_Mockup
             this.btnTrees.Name = "btnTrees";
             this.btnTrees.Size = new System.Drawing.Size(200, 37);
             this.btnTrees.TabIndex = 6;
-            this.btnTrees.Text = "Trees";
+            this.btnTrees.Text = "Sorted BST";
             this.btnTrees.UseVisualStyleBackColor = true;
             this.btnTrees.Click += new System.EventHandler(this.button4_Click);
             this.btnTrees.Leave += new System.EventHandler(this.btnTrees_Leave);
