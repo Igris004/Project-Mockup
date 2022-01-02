@@ -32,6 +32,7 @@ namespace Project_Mockup.Scripts
             this.pnlFormLoader = new System.Windows.Forms.Panel();
             this.txtboxInsert = new System.Windows.Forms.TextBox();
             this.btnInsert = new System.Windows.Forms.Button();
+            this.btnPop = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pnlFormLoader
@@ -58,12 +59,23 @@ namespace Project_Mockup.Scripts
             this.btnInsert.UseVisualStyleBackColor = true;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
+            // btnPop
+            // 
+            this.btnPop.Location = new System.Drawing.Point(651, 486);
+            this.btnPop.Name = "btnPop";
+            this.btnPop.Size = new System.Drawing.Size(68, 19);
+            this.btnPop.TabIndex = 3;
+            this.btnPop.Text = "Pop";
+            this.btnPop.UseVisualStyleBackColor = true;
+            this.btnPop.Click += new System.EventHandler(this.btnPop_Click);
+            // 
             // FormStack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(748, 539);
+            this.Controls.Add(this.btnPop);
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.txtboxInsert);
             this.Controls.Add(this.pnlFormLoader);
@@ -81,5 +93,6 @@ namespace Project_Mockup.Scripts
         private System.Windows.Forms.Panel pnlFormLoader;
         private System.Windows.Forms.TextBox txtboxInsert;
         private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.Button btnPop;
     }
 }
