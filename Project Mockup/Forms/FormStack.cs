@@ -145,6 +145,7 @@ namespace Project_Mockup.Scripts
             form.Controls.Add(viewer);
             form.ResumeLayout();
             form.Show();
+            graph = new_graph;
         }
     }
 }
