@@ -40,8 +40,7 @@ namespace Project_Mockup.Scripts
                 graph = new Microsoft.Msagl.Drawing.Graph("graph");
                 if (last_node == "NULL")
                 {
-                    bool isNumeric;
-                    if (isNumeric = int.TryParse(input, out _))
+                    if (int.TryParse(input, out _))
                     {
                         stack.Push(input);
                         MessageBox.Show("Inserted successfully! Now enter the second element.");
@@ -55,8 +54,7 @@ namespace Project_Mockup.Scripts
                 }
                 else
                 {
-                    bool isNumeric;
-                    if (isNumeric = int.TryParse(input, out _))
+                    if (int.TryParse(input, out _))
                     {
                         stack.Push(input);
                         foreach (string node in stack)

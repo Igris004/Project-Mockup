@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using Project_Mockup.Scripts;
+using Project_Mockup.Forms;
 
 namespace Project_Mockup
 {
@@ -46,6 +47,7 @@ namespace Project_Mockup
             pnlNav.Top = btnLinkedList.Top;
             pnlNav.Left = btnLinkedList.Left;
             btnLinkedList.BackColor = Color.FromArgb(46, 51, 73);
+            openChildForm(new FormLinkedList());
         }
 
         private void button2_Click(object sender, EventArgs e)

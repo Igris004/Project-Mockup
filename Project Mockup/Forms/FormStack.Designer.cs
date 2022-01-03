@@ -44,24 +44,24 @@ namespace Project_Mockup.Scripts
             // 
             // txtboxInsert
             // 
-            this.txtboxInsert.Location = new System.Drawing.Point(12, 486);
+            this.txtboxInsert.Location = new System.Drawing.Point(12, 520);
             this.txtboxInsert.Name = "txtboxInsert";
             this.txtboxInsert.Size = new System.Drawing.Size(100, 20);
             this.txtboxInsert.TabIndex = 1;
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(118, 486);
+            this.btnInsert.Location = new System.Drawing.Point(118, 520);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(68, 19);
             this.btnInsert.TabIndex = 2;
-            this.btnInsert.Text = "Insert";
+            this.btnInsert.Text = "Push";
             this.btnInsert.UseVisualStyleBackColor = true;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // btnPop
             // 
-            this.btnPop.Location = new System.Drawing.Point(651, 486);
+            this.btnPop.Location = new System.Drawing.Point(651, 520);
             this.btnPop.Name = "btnPop";
             this.btnPop.Size = new System.Drawing.Size(68, 19);
             this.btnPop.TabIndex = 3;
