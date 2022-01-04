@@ -92,16 +92,8 @@ namespace Project_Mockup
             pnlNav.Top = btnHeaps.Top;
             pnlNav.Left = btnHeaps.Left;
             btnHeaps.BackColor = Color.FromArgb(46, 51, 73);
+            openChildForm(new FormHeaps());
         }
-
-        private void btnShiftToSort_Click(object sender, EventArgs e)
-        {
-            pnlNav.Height = btnShiftToSort.Height;
-            pnlNav.Top = btnShiftToSort.Top;
-            pnlNav.Left = btnShiftToSort.Left;
-            btnShiftToSort.BackColor = Color.FromArgb(46, 51, 73);
-        }
-
         private void btnArray_Leave(object sender, EventArgs e)
         {
             btnGraphs.BackColor = Color.FromArgb(24, 30, 54);
@@ -131,12 +123,6 @@ namespace Project_Mockup
         {
             btnHeaps.BackColor = Color.FromArgb(24, 30, 54);
         }
-
-        private void btnShiftToSort_Leave(object sender, EventArgs e)
-        {
-            btnShiftToSort.BackColor = Color.FromArgb(24, 30, 54);
-        }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             Application.Exit();

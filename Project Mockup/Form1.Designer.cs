@@ -32,7 +32,6 @@ namespace Project_Mockup
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pnl = new System.Windows.Forms.Panel();
             this.pnlNav = new System.Windows.Forms.Panel();
-            this.btnShiftToSort = new System.Windows.Forms.Button();
             this.btnHeaps = new System.Windows.Forms.Button();
             this.btnTrees = new System.Windows.Forms.Button();
             this.btnQueue = new System.Windows.Forms.Button();
@@ -53,7 +52,6 @@ namespace Project_Mockup
             // 
             this.pnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.pnl.Controls.Add(this.pnlNav);
-            this.pnl.Controls.Add(this.btnShiftToSort);
             this.pnl.Controls.Add(this.btnHeaps);
             this.pnl.Controls.Add(this.btnTrees);
             this.pnl.Controls.Add(this.btnQueue);
@@ -74,21 +72,6 @@ namespace Project_Mockup
             this.pnlNav.Name = "pnlNav";
             this.pnlNav.Size = new System.Drawing.Size(3, 207);
             this.pnlNav.TabIndex = 9;
-            // 
-            // btnShiftToSort
-            // 
-            this.btnShiftToSort.FlatAppearance.BorderSize = 0;
-            this.btnShiftToSort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShiftToSort.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShiftToSort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnShiftToSort.Location = new System.Drawing.Point(0, 540);
-            this.btnShiftToSort.Name = "btnShiftToSort";
-            this.btnShiftToSort.Size = new System.Drawing.Size(200, 37);
-            this.btnShiftToSort.TabIndex = 8;
-            this.btnShiftToSort.Text = "Sorts";
-            this.btnShiftToSort.UseVisualStyleBackColor = true;
-            this.btnShiftToSort.Click += new System.EventHandler(this.btnShiftToSort_Click);
-            this.btnShiftToSort.Leave += new System.EventHandler(this.btnShiftToSort_Leave);
             // 
             // btnHeaps
             // 
@@ -273,7 +256,6 @@ namespace Project_Mockup
         private System.Windows.Forms.Button btnQueue;
         private System.Windows.Forms.Button btnStack;
         private System.Windows.Forms.Button btnLinkedList;
-        private System.Windows.Forms.Button btnShiftToSort;
         private System.Windows.Forms.Button btnHeaps;
         private System.Windows.Forms.Panel pnlNav;
         private System.Windows.Forms.Button button1;
