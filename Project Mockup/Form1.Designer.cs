@@ -38,7 +38,7 @@ namespace Project_Mockup
             this.btnQueue = new System.Windows.Forms.Button();
             this.btnStack = new System.Windows.Forms.Button();
             this.btnLinkedList = new System.Windows.Forms.Button();
-            this.btnArray = new System.Windows.Forms.Button();
+            this.btnGraphs = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -59,7 +59,7 @@ namespace Project_Mockup
             this.pnl.Controls.Add(this.btnQueue);
             this.pnl.Controls.Add(this.btnStack);
             this.pnl.Controls.Add(this.btnLinkedList);
-            this.pnl.Controls.Add(this.btnArray);
+            this.pnl.Controls.Add(this.btnGraphs);
             this.pnl.Controls.Add(this.panel2);
             this.pnl.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl.Location = new System.Drawing.Point(0, 0);
@@ -171,21 +171,21 @@ namespace Project_Mockup
             this.btnLinkedList.Click += new System.EventHandler(this.button1_Click);
             this.btnLinkedList.Leave += new System.EventHandler(this.btnLinkedList_Leave);
             // 
-            // btnArray
+            // btnGraphs
             // 
-            this.btnArray.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnArray.FlatAppearance.BorderSize = 0;
-            this.btnArray.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnArray.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnArray.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnArray.Location = new System.Drawing.Point(0, 144);
-            this.btnArray.Name = "btnArray";
-            this.btnArray.Size = new System.Drawing.Size(200, 37);
-            this.btnArray.TabIndex = 2;
-            this.btnArray.Text = "Array";
-            this.btnArray.UseVisualStyleBackColor = true;
-            this.btnArray.Click += new System.EventHandler(this.btnArray_Click);
-            this.btnArray.Leave += new System.EventHandler(this.btnArray_Leave);
+            this.btnGraphs.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGraphs.FlatAppearance.BorderSize = 0;
+            this.btnGraphs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGraphs.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGraphs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnGraphs.Location = new System.Drawing.Point(0, 144);
+            this.btnGraphs.Name = "btnGraphs";
+            this.btnGraphs.Size = new System.Drawing.Size(200, 37);
+            this.btnGraphs.TabIndex = 2;
+            this.btnGraphs.Text = "Graphs";
+            this.btnGraphs.UseVisualStyleBackColor = true;
+            this.btnGraphs.Click += new System.EventHandler(this.btnArray_Click);
+            this.btnGraphs.Leave += new System.EventHandler(this.btnArray_Leave);
             // 
             // panel2
             // 
@@ -268,7 +268,7 @@ namespace Project_Mockup
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnArray;
+        private System.Windows.Forms.Button btnGraphs;
         private System.Windows.Forms.Button btnTrees;
         private System.Windows.Forms.Button btnQueue;
         private System.Windows.Forms.Button btnStack;

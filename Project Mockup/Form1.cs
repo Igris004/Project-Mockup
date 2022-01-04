@@ -29,11 +29,12 @@ namespace Project_Mockup
         public Form1()
         {
             InitializeComponent();
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
-            pnlNav.Height = btnArray.Height;
-            pnlNav.Top = btnArray.Top;
-            pnlNav.Left = btnArray.Left;
-            btnArray.BackColor = Color.FromArgb(46, 51, 73);
+            Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
+            pnlNav.Height = btnGraphs.Height;
+            pnlNav.Top = btnGraphs.Top;
+            pnlNav.Left = btnGraphs.Left;
+            btnGraphs.BackColor = Color.FromArgb(46, 51, 73);
+            openChildForm(new FormGraphs());
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -69,10 +70,11 @@ namespace Project_Mockup
 
         private void btnArray_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = btnArray.Height;
-            pnlNav.Top = btnArray.Top;
-            pnlNav.Left = btnArray.Left;
-            btnArray.BackColor = Color.FromArgb(46, 51, 73);
+            pnlNav.Height = btnGraphs.Height;
+            pnlNav.Top = btnGraphs.Top;
+            pnlNav.Left = btnGraphs.Left;
+            btnGraphs.BackColor = Color.FromArgb(46, 51, 73);
+            openChildForm(new FormGraphs());
         }
 
         private void btnQueue_Click(object sender, EventArgs e)
@@ -101,7 +103,7 @@ namespace Project_Mockup
 
         private void btnArray_Leave(object sender, EventArgs e)
         {
-            btnArray.BackColor = Color.FromArgb(24, 30, 54);
+            btnGraphs.BackColor = Color.FromArgb(24, 30, 54);
         }
 
         private void btnLinkedList_Leave(object sender, EventArgs e)
