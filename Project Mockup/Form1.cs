@@ -83,6 +83,7 @@ namespace Project_Mockup
             pnlNav.Top = btnQueue.Top;
             pnlNav.Left = btnQueue.Left;
             btnQueue.BackColor = Color.FromArgb(46, 51, 73);
+            openChildForm(new FormQueue());
         }
 
         private void btnHeaps_Click(object sender, EventArgs e)

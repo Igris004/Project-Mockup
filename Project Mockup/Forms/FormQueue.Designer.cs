@@ -37,12 +37,13 @@ namespace Project_Mockup.Forms
             // 
             // btnDequeue
             // 
-            this.btnDequeue.Location = new System.Drawing.Point(687, 517);
+            this.btnDequeue.Location = new System.Drawing.Point(687, 518);
             this.btnDequeue.Name = "btnDequeue";
             this.btnDequeue.Size = new System.Drawing.Size(65, 19);
             this.btnDequeue.TabIndex = 7;
             this.btnDequeue.Text = "Dequeue";
             this.btnDequeue.UseVisualStyleBackColor = true;
+            this.btnDequeue.Click += new System.EventHandler(this.btnDequeue_Click);
             // 
             // btnEnqueue
             // 
@@ -52,6 +53,7 @@ namespace Project_Mockup.Forms
             this.btnEnqueue.TabIndex = 6;
             this.btnEnqueue.Text = "Enqueue";
             this.btnEnqueue.UseVisualStyleBackColor = true;
+            this.btnEnqueue.Click += new System.EventHandler(this.btnEnqueue_Click);
             // 
             // txtboxInsert
             // 
@@ -80,6 +82,7 @@ namespace Project_Mockup.Forms
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormQueue";
             this.Text = "FormQueue";
+            this.Load += new System.EventHandler(this.FormQueue_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
